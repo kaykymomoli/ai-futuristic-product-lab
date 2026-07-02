@@ -1,13 +1,14 @@
 # NeuralOps AI
 
-Primeiro projeto do laboratório de estudos em IA e produto ([ai-futuristic-product-lab](../../README.md)). Landing page simples com UI dark/light, usada como base para aprender Next.js, Tailwind e shadcn/ui na prática.
+Primeiro projeto do laboratório de estudos em IA e produto ([ai-futuristic-product-lab](../../README.md)). Landing page dark/futurista para uma plataforma fictícia de automação com IA, usada como base para aprender Next.js, Tailwind e componentes de UI na prática.
 
 ## Stack
 
 - [Next.js 16](https://nextjs.org) (App Router + Turbopack)
 - TypeScript
 - Tailwind CSS v4
-- [shadcn/ui](https://ui.shadcn.com) (Button, Card, Badge)
+- [Base UI](https://base-ui.com) (`@base-ui/react`) para o componente `Button`
+- [Vercel Analytics](https://vercel.com/docs/analytics) (ativo apenas em produção)
 - pnpm
 
 ## Rodando localmente
@@ -31,12 +32,12 @@ pnpm lint    # eslint
 
 ```
 src/
-  app/            rotas (App Router), layout, estilos globais
-  components/ui/  componentes shadcn/ui (button, card, badge)
-  components/     componentes próprios (ex: theme-toggle)
+  app/            rotas (App Router), layout, estilos globais, ícone
+  components/     seções da landing page (navbar, hero, features, cta, footer)
+  components/ui/  componentes de UI (button, card, badge)
   lib/            utilitários (ex: cn)
 ```
 
-## Tema claro/escuro
+## Tema
 
-O tema começa em modo escuro por padrão. A escolha do usuário é salva no `localStorage` e aplicada antes da renderização (script inline em `layout.tsx`) para evitar flash de tela.
+A landing page é dark-only por design (`color-scheme: dark` fixo em `globals.css`); não há alternância para modo claro.

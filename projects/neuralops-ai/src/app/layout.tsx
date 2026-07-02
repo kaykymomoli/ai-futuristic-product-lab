@@ -1,40 +1,39 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
+import { Analytics } from '@vercel/analytics/next'
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
-const title = "NeuralOps AI";
-const description =
-  "Laboratório de estudos e experimentos com IA e produtos futuristas.";
+const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
-  title,
-  description,
-  openGraph: { title, description, type: "website" },
-  twitter: { card: "summary", title, description },
-};
+  title: 'NeuralOps AI',
+  description:
+    'Landing page futurista para uma plataforma de automação com inteligência artificial.',
+}
+
+export const viewport: Viewport = {
+  colorScheme: 'dark',
+  themeColor: '#0b1220',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html
       lang="pt-BR"
-      suppressHydrationWarning
-      className={cn("h-full", "antialiased", "font-sans", inter.variable)}
+      className={`${geistSans.variable} ${geistMono.variable} bg-background`}
     >
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';if(t==='dark')document.documentElement.classList.add('dark');}catch(e){}})();`,
-          }}
-        />
-      </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        {process.env.NODE_ENV === 'production' && <Analytics />}
+      </body>
     </html>
-  );
+  )
 }

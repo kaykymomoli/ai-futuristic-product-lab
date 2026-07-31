@@ -4,6 +4,7 @@ import { TrustedCompaniesSection } from "@/components/trusted-companies-section"
 import { HowItWorksSection } from "@/components/how-it-works-section";
 import { FeaturesSection } from "@/components/features-section";
 import { PricingSection } from "@/components/pricing-section";
+import { FAQSection } from "@/components/faq-section";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <HowItWorksSection />
         <FeaturesSection />
         <PricingSection />
+        <FAQSection />
         <CTA />
       </main>
       <Footer />

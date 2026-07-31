@@ -105,7 +105,7 @@ export function FeaturesSection() {
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
-            Módulos
+            // Módulos
           </p>
           <h2 className="mt-4 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
             Tudo que você precisa para automatizar

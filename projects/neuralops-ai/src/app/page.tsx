@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/navbar";
 import { HeroSection } from "@/components/hero-section";
 import { TrustedCompaniesSection } from "@/components/trusted-companies-section";
+import { HowItWorksSection } from "@/components/how-it-works-section";
 import { FeaturesSection } from "@/components/features-section";
 import { CTA } from "@/components/cta";
 import { Footer } from "@/components/footer";
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <HeroSection />
         <TrustedCompaniesSection />
+        <HowItWorksSection />
         <FeaturesSection />
         <CTA />
       </main>

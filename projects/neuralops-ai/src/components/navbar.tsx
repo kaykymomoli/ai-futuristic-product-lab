@@ -49,7 +49,10 @@ export function Navbar() {
           <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
             Entrar
           </Button>
-          <Button size="sm" className="rounded-full">
+          <Button
+            size="sm"
+            className="rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/40"
+          >
             Começar agora
           </Button>
         </div>
@@ -89,7 +92,10 @@ export function Navbar() {
               <Button variant="ghost" size="sm">
                 Entrar
               </Button>
-              <Button size="lg" className="rounded-full px-6 center max-w-[200px] mx-auto">
+              <Button
+                size="lg"
+                className="center mx-auto max-w-[200px] rounded-full px-6 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/40"
+              >
                 Começar agora
               </Button>
             </div>

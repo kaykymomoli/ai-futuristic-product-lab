@@ -16,7 +16,10 @@ export function CTA() {
             </p>
 
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-              <Button size="lg" className="w-full gap-2 sm:w-auto">
+              <Button
+                size="lg"
+                className="w-full gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 sm:w-auto"
+              >
                 Criar conta grátis
                 <ArrowRight className="h-4 w-4" />
               </Button>

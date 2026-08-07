@@ -12,8 +12,7 @@ export function HeroSection() {
           </div>
 
           <h1 className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
-            Deixe a IA operar seu trabalho enquanto você{' '}
-            <span className="text-primary">escala o negócio</span>
+            Deixe a IA operar seu trabalho enquanto você escala o negócio
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
@@ -23,7 +22,10 @@ export function HeroSection() {
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button size="lg" className="w-full gap-2 sm:w-auto">
+            <Button
+              size="lg"
+              className="w-full gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/40 sm:w-auto"
+            >
               Começar agora
               <ArrowRight className="h-4 w-4" />
             </Button>

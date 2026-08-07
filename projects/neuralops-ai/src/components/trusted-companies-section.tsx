@@ -31,7 +31,7 @@ export function TrustedCompaniesSection() {
                 className="flex flex-col items-center gap-3 rounded-2xl border border-border glass px-4 py-6 text-center transition-colors duration-300 hover:border-primary/30"
               >
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-secondary/40 text-primary">
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <span className="text-sm font-medium text-muted-foreground">
                   {company.name}

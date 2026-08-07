@@ -109,7 +109,7 @@ export function PricingSection() {
                     key={feature}
                     className="flex items-start gap-2 text-sm text-muted-foreground"
                   >
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
                     <span>{feature}</span>
                   </li>
                 ))}

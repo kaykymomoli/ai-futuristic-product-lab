@@ -70,6 +70,7 @@ export function FAQSection() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className="h-4 w-4 shrink-0 text-primary transition-transform duration-300 group-open:rotate-180"
+                  aria-hidden="true"
                 >
                   <path d="M6 9l6 6 6-6" />
                 </svg>

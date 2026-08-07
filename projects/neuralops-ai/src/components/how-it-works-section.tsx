@@ -22,6 +22,7 @@ const steps: Step[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
         className="h-5 w-5"
+        aria-hidden="true"
       >
         <circle cx="6" cy="6" r="2.5" />
         <circle cx="18" cy="18" r="2.5" />
@@ -44,6 +45,7 @@ const steps: Step[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
         className="h-5 w-5"
+        aria-hidden="true"
       >
         <circle cx="5" cy="18" r="2" />
         <circle cx="12" cy="6" r="2" />
@@ -67,6 +69,7 @@ const steps: Step[] = [
         strokeLinecap="round"
         strokeLinejoin="round"
         className="h-5 w-5"
+        aria-hidden="true"
       >
         <path d="M4 18V13" />
         <path d="M10 18V9" />

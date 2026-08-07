@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# env
+.env*
+
+# os
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode/*
+!.vscode/extensions.json

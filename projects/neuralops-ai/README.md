@@ -10,6 +10,10 @@ A NeuralOps AI foi utilizada para estudar e aplicar conceitos de frontend modern
 
 [Acessar NeuralOps AI](https://ai-futuristic-product-lab-two.vercel.app)
 
+## Case Study
+
+📄 [Ver case técnico completo](./docs/case-study.md)
+
 ## Funcionalidades
 
 - Landing page responsiva para desktop, tablet e mobile

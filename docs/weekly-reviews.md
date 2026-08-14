@@ -110,3 +110,74 @@ Métricas de performance devem ser analisadas em ambiente de produção e com o 
 
 ### Status
 Concluído.
+
+## Semana 6 — Orbit Studio: Design System e Layout Base
+
+### Objetivo
+Iniciar o segundo projeto do laboratório, criando a fundação visual e estrutural do Orbit Studio, uma plataforma SaaS fictícia para equipes criativas trabalharem com IA.
+
+### Stack
+- Next.js 16
+- React 19
+- TypeScript
+- Tailwind CSS v4
+- pnpm
+- Claude Code
+- Google Stitch
+
+### O que foi construído
+
+#### Design System
+Foram definidos tokens globais para:
+- background
+- surface
+- primary
+- secondary
+- border
+- foreground
+- muted
+- gradient
+
+Também foi configurada a tipografia Geist utilizando `next/font` e os tokens do Tailwind.
+
+#### Componentes reutilizáveis
+- Button
+- Card
+- Input
+- Textarea
+- Badge
+- Label
+- Select
+
+Os componentes utilizam os tokens do design system em vez de cores hardcoded.
+
+#### Layout da aplicação
+Foram criados:
+- AppSidebar
+- AppHeader
+- AppShell
+
+O layout possui sidebar e header fixos no desktop, área principal com scroll independente e comportamento responsivo para tablet e mobile.
+
+### Validações realizadas
+- Testes visuais dos componentes
+- Navegação por teclado
+- Estados de foco
+- Estados disabled
+- Responsividade em 390px e 768px
+- Scroll independente do conteúdo
+- `pnpm lint`
+- `pnpm build`
+
+### Principais aprendizados
+- Criação de design tokens com Tailwind CSS v4
+- Separação entre tokens, componentes e interface
+- Componentização reutilizável com React
+- Uso de elementos HTML nativos para preservar acessibilidade
+- Uso de `forwardRef`
+- Estruturação de um layout SaaS com Flexbox
+- Desenvolvimento incremental assistido por IA
+- Revisão crítica do código gerado antes de avançar
+
+### Status
+Concluído.

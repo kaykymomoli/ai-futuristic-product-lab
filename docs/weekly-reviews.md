@@ -73,3 +73,40 @@ A NeuralOps AI passou de uma landing page básica para uma landing page SaaS mai
 
 ### Status
 Concluído.
+
+## Semana 4 — Responsividade, Acessibilidade e Qualidade
+
+### Objetivo da semana
+Validar a qualidade técnica da landing page NeuralOps AI em diferentes dispositivos, acessibilidade, boas práticas, SEO e performance.
+
+### O que validei
+- Responsividade em 390px, 768px, 1024px e 1440px
+- Navegação completa utilizando teclado
+- Funcionamento do FAQ via teclado
+- Performance com Lighthouse
+- Acessibilidade
+- Best Practices
+- SEO
+
+### Lighthouse final
+- Performance: 99
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
+
+### Problemas encontrados
+O primeiro teste apresentou notas inferiores por influência do ambiente local e extensões do navegador.
+
+Também foi identificado um erro 404 relacionado ao Vercel Web Analytics.
+
+### Como resolvi
+- Ativei o Web Analytics na Vercel
+- Realizei um novo deploy
+- Reexecutei o Lighthouse em ambiente limpo
+- Comparei os resultados antes de realizar qualquer alteração no código
+
+### Principal aprendizado
+Métricas de performance devem ser analisadas em ambiente de produção e com o mínimo possível de interferência externa antes de realizar otimizações no código.
+
+### Status
+Concluído.

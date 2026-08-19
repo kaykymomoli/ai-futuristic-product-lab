@@ -181,3 +181,73 @@ O layout possui sidebar e header fixos no desktop, área principal com scroll in
 
 ### Status
 Concluído.
+
+## Semana 7 — Orbit Studio: Workspace Dashboard
+
+### Objetivo
+Transformar a base visual do Orbit Studio em uma interface real de produto, utilizando o design system criado anteriormente para compor um dashboard SaaS responsivo.
+
+### O que foi construído
+
+#### Workspace Header
+- Título da área
+- Descrição
+- Ação "Novo Projeto"
+- Layout responsivo
+
+#### Métricas
+- Projetos Ativos
+- Gerações com IA
+- Membros da Equipe
+- Armazenamento Utilizado
+- Barra de progresso acessível
+
+#### Projetos Recentes
+- Solaris Branding
+- Nebula UI Kit
+- Badges de status
+- Previews visuais utilizando os tokens do design system
+- Layout responsivo em grid
+
+#### Atividade de IA
+- Lista compacta de tarefas recentes
+- Modelo utilizado
+- Status
+- Horário
+
+#### Atividade da Equipe
+- Histórico simples de ações recentes da equipe
+- Descrição e horário
+
+#### Layout
+O dashboard foi organizado em:
+- métricas no topo;
+- projetos recentes na coluna principal;
+- atividades de IA e equipe em uma coluna lateral;
+- empilhamento automático em telas menores.
+
+### Interface
+Todos os textos visíveis foram traduzidos para português, mantendo "Orbit Studio" como nome próprio do produto.
+
+### Validações realizadas
+- Responsividade em 390px
+- Responsividade em 768px
+- Responsividade em 1440px
+- Navegação por teclado
+- Estados de foco
+- Ausência de overflow horizontal
+- `pnpm lint`
+- `pnpm build`
+
+### Principais aprendizados
+- Composição de componentes em interfaces de produto
+- Organização de dashboards responsivos
+- Uso de grids com proporções diferentes
+- Reutilização de componentes de design system
+- Criação de dados fictícios estruturados para UI
+- Acessibilidade em indicadores de progresso
+- Separação entre componentes de UI, layout e domínio
+- Uso de referências visuais sem copiar integralmente o layout gerado
+
+### Status
+Concluído.

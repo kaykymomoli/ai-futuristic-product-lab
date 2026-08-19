@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 
-const navItems = ["Workspace", "Assets", "AI Engine", "Templates", "Settings"];
+const navItems = ["Espaço de Trabalho", "Recursos", "Motor de IA", "Modelos", "Configurações"];
+const activeItem = "Espaço de Trabalho";
 
 export function AppSidebar() {
   return (
@@ -9,22 +10,30 @@ export function AppSidebar() {
         <p className="text-base font-semibold text-foreground">
           Orbit Studio
         </p>
-        <p className="text-xs text-muted">AI Creative Suite</p>
+        <p className="text-xs text-muted">Suíte Criativa com IA</p>
       </div>
 
       <nav className="flex flex-1 flex-col gap-1">
-        {navItems.map((item) => (
-          <span
-            key={item}
-            className="text-sm text-muted transition-colors duration-200 hover:text-foreground"
-          >
-            {item}
-          </span>
-        ))}
+        {navItems.map((item) => {
+          const isActive = item === activeItem;
+
+          return (
+            <span
+              key={item}
+              className={
+                isActive
+                  ? "rounded-md border border-primary/20 bg-primary/10 px-3 py-2 text-sm text-primary"
+                  : "rounded-md px-3 py-2 text-sm text-muted transition-colors duration-200 hover:text-foreground"
+              }
+            >
+              {item}
+            </span>
+          );
+        })}
       </nav>
 
       <Button variant="primary" className="w-full">
-        New Project
+        Novo Projeto
       </Button>
     </aside>
   );

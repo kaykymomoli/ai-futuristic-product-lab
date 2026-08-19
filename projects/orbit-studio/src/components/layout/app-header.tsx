@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-const navItems = ["Design System", "Code", "Collaborate"];
+const navItems = ["Sistema de Design", "Código", "Colaborar"];
 
 export function AppHeader() {
   return (
@@ -17,7 +17,7 @@ export function AppHeader() {
       </nav>
 
       <Button variant="primary" className="ml-auto">
-        Publish
+        Publicar
       </Button>
     </header>
   );
